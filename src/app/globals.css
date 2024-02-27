@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-image: url('/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+/* En tu archivo CSS */
+.banner-container {
+  height: calc(80vh); /* Ocupa el 80% de la altura de la pantalla */
+  position: relative;
+  overflow: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.banner-video {
+  width: 100%; /* Establece el ancho del video al 100% del contenedor */
+  height: 100%; /* Establece la altura del video al 100% del contenedor */
+  object-fit: cover; /* Cubre el área del contenedor sin perder las proporciones */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media queries para ajustar el video en pantallas más pequeñas */
+@media (max-width: 950px) {
+  .banner-container {
+    height: 80vh; /* Puedes ajustar este valor para cambiar la altura en pantallas pequeñas */
   }
 }
+
+/* Puedes agregar más media queries para diferentes puntos de ruptura */
