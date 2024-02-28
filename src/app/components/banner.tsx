@@ -28,7 +28,7 @@ export default function Banner() {
     if (isMobile === null) return null;
 
     return (
-        <div className="banner-container banner-container mx-4 md:mx-6 lg:mx-8 rounded-lg overflow-hidden">
+        <div className="banner-container banner-container mt-2 mx-4 md:mx-6 lg:mx-8 rounded-lg overflow-hidden">
             {isMobile ? (
                 <video
                     src="/videos/Banner-Mobile.mp4"
