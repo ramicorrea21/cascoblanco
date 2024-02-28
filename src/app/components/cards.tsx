@@ -3,14 +3,17 @@ import Slider from './slider'
 
 export default function Cards(){
     return(
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full px-4 mt-4">
         {tipologias.map((tipologia, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div key={index} className="flex flex-col items-center bg-white shadow-md rounded-lg">
             <Slider images={tipologia.img} />
-            <h2 className="text-md font-semibold mt-2">{tipologia.title}</h2>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-2">
-              Ver más
-            </button>
+            <div className="p-4 w-full">
+              <h2 className="text-md font-semibold">{tipologia.title}</h2>
+              <p>{tipologia.descripcion}</p>
+              <button className="border border-black bg-white text-black hover:text-white hover:bg-black font-semibold py-1 px-4 rounded-xl mt-2 text-sm ">
+                Ver más
+              </button>
+            </div>
           </div>
         ))}
       </div>

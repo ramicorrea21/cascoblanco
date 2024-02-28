@@ -25,7 +25,7 @@ export default function Navbar() {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <nav className="px-6 py-6  shadow-sm">
+    <nav className="px-6 py-6 bg-white  sticky top-0 z-50  shadow-sm">
       <div className="container mx-auto flex items-center justify-between">
         <div className='flex'>
           <Link href="/" className='flex items-center'>
