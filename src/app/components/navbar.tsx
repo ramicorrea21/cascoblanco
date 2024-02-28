@@ -48,10 +48,10 @@ export default function Navbar() {
               </button> 
               {dropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-md z-10">
+                  <DropdownItem href="/" label="Obra gris - Sin terminaciones" />
+                  <DropdownItem href="/" label="Vivienda Estándar" />
                   <DropdownItem href="/" label="Vivienda Amazing" />
                   <DropdownItem href="/" label="Vivienda Premium" />
-                  <DropdownItem href="/" label="Vivienda Estándar" />
-                  <DropdownItem href="/" label="Obra gris - Sin terminaciones" />
                 </div>
               )}
             </li>
@@ -98,10 +98,10 @@ export default function Navbar() {
               </button>
               {dropdownOpen && (
                 <div className="flex flex-col items-center bg-gray-50">
+                  <DropdownItem href="/" label="Obra gris - Sin terminaciones" />
+                  <DropdownItem href="/" label="Vivienda Estándar" />
                   <DropdownItem href="/" label="Vivienda Amazing" />
                   <DropdownItem href="/" label="Vivienda Premium" />
-                  <DropdownItem href="/" label="Vivienda Estándar" />
-                  <DropdownItem href="/" label="Obra gris - Sin terminaciones" />
                 </div>
               )}
             </div>
