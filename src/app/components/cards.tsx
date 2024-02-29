@@ -1,5 +1,6 @@
 import {tipologias} from '../utils/tipologias.js'
 import Slider from './slider'
+import Link from 'next/link'
 
 export default function Cards(){
     return(
@@ -10,9 +11,9 @@ export default function Cards(){
             <div className="p-4 w-full">
               <h2 className="text-md font-semibold">{tipologia.title}</h2>
               <p>{tipologia.descripcion}</p>
-              <button className="border border-black bg-white text-black hover:text-white hover:bg-black font-semibold py-1 px-4 rounded-xl mt-2 text-sm ">
+              <Link href={tipologia.link} className="border border-black bg-white text-black hover:text-white hover:bg-black font-semibold py-1 px-4 rounded-xl mt-2 text-sm ">
                 Ver más
-              </button>
+              </Link>
             </div>
           </div>
         ))}

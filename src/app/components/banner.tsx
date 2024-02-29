@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy } from 'react';
 import LoadingSkeleton from './LoadingSkeleton';// Asegúrate de importar el componente del esqueleto
 
 export default function Banner() {

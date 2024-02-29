@@ -5,7 +5,7 @@ interface BulletListProps {
   
   const BulletList: React.FC<BulletListProps> = ({ items }) => {
     return (
-      <ul className="list-disc pl-5 space-y-2 ">
+      <ul className="list-disc pl-5 space-y-2 mt-6">
         {Object.entries(items).map(([key, value]) => (
           <li key={key}>
             <strong>{key.replace(/_/g, ' ')}:</strong> {value}

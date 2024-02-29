@@ -32,7 +32,6 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
                         height={imageHeight} 
                         alt={`Slide ${index + 1}`}
                         className="rounded-md"
-                        priority
                     />
                 </div>
             ))}
