@@ -63,3 +63,18 @@ export const ficha_premium = {
     PISOS: "De tipo porcelanato en su totalidad y de primera calidad. - pileta de natación: de material, con medidas 3,50 x 7,00 mts, incluye bomba de filtrado, skimmer y losetas atérmicas en bordes."
 }
 
+export const info_legal ={
+    ENTREGA: "Sistema llave en mano.",
+    CONTRATO: "Firmado ante escribano  público.",
+    GARANTIA: "Firmada ante escribano público por 5 años por defectos y vicios aparentes u ocultos de obra.",
+    PLANOS:"Presentados en el colegio de arquitectos de la provincia de Córdoba, a cargo de la empresa.",
+    PAGOS: "Requeridos según el avance de la obra."
+}
+
+export const ficha_tecnica ={
+    AMAZING:"En tres configuraciones de 60, 100 y 140 metros cuadrados, con posibilidad de elección de metros libres. Apto dúplex a partir de 90 metros.",
+    PREMIUM:"En tres configuraciones de 110, 190 y 260 metros cuadrados, con posibilidad de elección de metros libres. Apto dúplex a partir de 90 metros.",
+    AMBIENTES:"La cantidad de ambientes, habitaciones, tamaño de garage, dimensiones de cocina, comedor y living, dependerá de la configuración y metros cuadrados elegidos por el cliente, y de las condiciones del terreno o lote donde se desarrollará la construcción, que puede diferir con nuestros modelos y planos ya confeccionados.",
+    OBRA:"La empresa se responsabiliza por el personal de obra, la provisión de herramientas, elementos y materiales de construcción necesarios e inherentes al proyecto, los honorarios de los arquitectos.",
+    PLAZO:"Se estima un mínimo de 6 y un máximo de 9 meses para proyectos que superen los 100 metros cuadrados."
+}

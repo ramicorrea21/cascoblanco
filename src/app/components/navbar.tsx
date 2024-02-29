@@ -11,11 +11,7 @@ interface DropdownItemProps {
   label: string;
 }
 
-const DropdownItem: React.FC<DropdownItemProps> = ({ href, label }) => (
-  <Link href={href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-    {label}
-  </Link>
-);
+
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -23,6 +19,12 @@ export default function Navbar() {
 
   const toggleMenu = () => setOpenMenu(!openMenu);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  
+  const DropdownItem: React.FC<DropdownItemProps> = ({ href, label }) => (
+    <Link href={href} onClick={toggleMenu} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+      {label}
+    </Link>
+  );
 
   return (
     <nav className="px-6 py-6 bg-white  sticky top-0 z-50  shadow-sm">
@@ -56,13 +58,8 @@ export default function Navbar() {
               )}
             </li>
             <li>
-              <Link href="/" className="font-semibold text-lg cursor-pointer">
+              <Link href="/info" className="font-semibold text-lg cursor-pointer">
                 Informacion Legal
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="font-semibold text-lg cursor-pointer">
-                Contactanos
               </Link>
             </li>
           </ul>
@@ -105,11 +102,8 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            <Link href="/" className="font-semibold py-2 text-lg cursor-pointer">
+            <Link href="/info" className="font-semibold py-2 text-lg cursor-pointer">
               Informacion Legal
-            </Link>
-            <Link href="/" className="font-semibold py-2 text-lg cursor-pointer">
-              Contactanos
             </Link>
           </div>
         </div>

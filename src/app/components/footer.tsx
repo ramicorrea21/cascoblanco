@@ -1,9 +1,12 @@
 import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope, FaHeart } from 'react-icons/fa';
 import Link from 'next/link';
+import WspButton from './whatsapp';
 
 export default function Footer(){
     return (
-        <footer className="bg-white  text-gray-700 border-t mt-10">
+      <>
+      <WspButton/>
+      <footer className="bg-white  text-gray-700 border-t mt-10">
           <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-8 md:justify-items-center">
             {/* Primera columna */}
             <div className='py-2'>
@@ -41,10 +44,12 @@ export default function Footer(){
               <div className="flex items-center mt-3">
                 <span>Sitio web hecho por </span>
                 <FaHeart className="mx-2 text-red-500" />
-                <span>Vitality</span>
+                <Link href='https://vitality-smoky.vercel.app/'>Vitality</Link>
               </div>
             </div>
           </div>
         </footer>
+      </>
+        
         )
 }

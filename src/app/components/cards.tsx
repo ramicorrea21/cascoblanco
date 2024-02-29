@@ -10,8 +10,8 @@ export default function Cards(){
             <Slider images={tipologia.img} />
             <div className="p-4 w-full">
               <h2 className="text-md font-semibold">{tipologia.title}</h2>
-              <p>{tipologia.descripcion}</p>
-              <Link href={tipologia.link} className="border border-black bg-white text-black hover:text-white hover:bg-black font-semibold py-1 px-4 rounded-xl mt-2 text-sm ">
+              <p className='mb-2'>{tipologia.descripcion}</p>
+              <Link href={tipologia.link} className="border border-black bg-white text-black hover:text-white hover:bg-black font-semibold py-1  px-4 rounded-xl  text-sm ">
                 Ver más
               </Link>
             </div>
