@@ -102,7 +102,7 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            <Link href="/info" className="font-semibold py-2 text-lg cursor-pointer">
+            <Link href="/info" onClick={toggleMenu} className="font-semibold py-2 text-lg cursor-pointer">
               Información Legal
             </Link>
           </div>
