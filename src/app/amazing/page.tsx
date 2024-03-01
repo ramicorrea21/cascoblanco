@@ -12,7 +12,7 @@ export default function Amazing() {
           <h1 className="text-2xl text-center">{amazingData?.title}</h1>
           <div className='mt-5 max-w-[1400px]  w-full m-auto my-4 px-4'>
           {amazingData && <Carrousel images={amazingData.img} />}
-          <h1 className="text-2xl text-center my-4">Ficha Tecnica</h1>
+          <h1 className="text-2xl text-center my-4">Ficha Técnica</h1>
           <BulletList items={ficha_amazing} />
           </div>
         </div>

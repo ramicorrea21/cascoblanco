@@ -59,7 +59,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/info" className="font-semibold text-lg cursor-pointer">
-                Informacion Legal
+                Información Legal
               </Link>
             </li>
           </ul>
@@ -103,7 +103,7 @@ export default function Navbar() {
               )}
             </div>
             <Link href="/info" className="font-semibold py-2 text-lg cursor-pointer">
-              Informacion Legal
+              Información Legal
             </Link>
           </div>
         </div>
