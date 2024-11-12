@@ -17,7 +17,7 @@ export default function Footer(){
               </div>
               <div className="flex items-center mt-3">
                 <FaPhone className="mr-2" />
-                <span>Teléfono: +54 9 3516957869</span>
+                <span>Teléfono: +54 9 3513006426 </span>
               </div>
               <div className="flex items-center mt-3">
                 <FaEnvelope className="mr-2" />
@@ -34,7 +34,7 @@ export default function Footer(){
               </div>
               <div className="flex items-center mt-3">
                 <FaInstagram className="mr-2" />
-                <Link href='https://www.instagram.com/cascoblanco.m/' className='hover:text-slate-500'>cascoblancomateriales</Link>
+                <Link href='https://www.instagram.com/cascoblancoconstructora/' className='hover:text-slate-500'>cascoblancoconstructora</Link>
               </div>
             </div>
     

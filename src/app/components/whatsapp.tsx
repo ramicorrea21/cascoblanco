@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function WspButton() {
-  const phoneNumber = "+5493516957869";
+  const phoneNumber = "+5493513006426";
   const message = "Hola! Visite la web de Casco Blanco Constructora y quiero más información.";
 
   const whatsappLink = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}&text=${encodeURI(message)}`;
